@@ -37,3 +37,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
+.idea/artifacts/BookStore_war.xml
+.idea/artifacts/BookStore_war_exploded.xml
