@@ -4,7 +4,7 @@
           uri="http://java.sun.com/jsp/jstl/core" %>
 <style><%@include file="/WEB-INF/css/headerStyle.css"%>
 <%@include file="/WEB-INF/css/footerStyle.css"%>
-<%@include file="/WEB-INF/css/homestyle.css" %>
+<%@include file="/WEB-INF/css/general.css"%>
 </style>
 <!DOCTYPE html>
 <html>
@@ -24,7 +24,10 @@
             <div class="header-left">
                 <div class="content-logo">
                     <a class="logo" href=".">
-                        <img src="img/logo/svg/logo-black-no-background.svg" alt="logo"/>
+                        <picture>
+                            <source media="(min-width:650px)" srcset="img/logo/svg/logo-black-no-background.svg">
+                        <img src="img/logo/svg/bookstore-website-favicon-black.svg" alt="logo"/>
+                        </picture>
                     </a>
                 </div>
             </div>

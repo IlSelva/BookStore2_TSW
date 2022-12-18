@@ -6,20 +6,20 @@ body {
   margin: 0;
 }
 
-header{
+header {
   background: #563011;
   width: 100%;
   display: block;
 }
 
-.header-container{
+.header-container {
   display: block;
   padding: 0 24px;
   margin: 0 auto;
   width: 100%;
 }
 
-.header-main{
+.header-main {
   /*height: 96px;*/
   display: flex;
   align-items: center;
@@ -28,36 +28,38 @@ header{
   justify-content: center;
 }
 
-.header-left{
-
+.header-left {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.header-center{
+.header-center {
   width: 40vw;
   text-align: left;
   display: flex;
   align-items: center;
 }
 
-.header-right{
+.header-right {
   display: flex;
   align-items: center;
   width: 20vw;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-left: 20px;
 }
 
-.logo{
+.logo {
   transition: all .2s ease-out;
   background-color: transparent;
   cursor: pointer;
   filter: invert(95%) sepia(2%) saturate(2414%) hue-rotate(352deg) brightness(103%) contrast(102%);
 }
 
-.logo:hover{
+.logo:hover {
   filter: invert(88%) sepia(18%) saturate(993%) hue-rotate(342deg) brightness(106%) contrast(103%);
 }
 
-.logo img{
+.logo img {
   display: block;
   height: 9vh;
   min-height: 46px;
@@ -65,18 +67,18 @@ header{
   margin-bottom: 6px;
 }
 
-.searchBox{
+.searchBox {
   display: block;
   margin: auto;
 }
 
-#ricerca{
+#ricerca {
   display: flex;
   align-items: center;
   margin: auto;
 }
 
-.category{
+.category {
   border: 1px solid;
   border-left: none;
   border-radius: 5px 0 0 5px;
@@ -88,7 +90,7 @@ header{
   background: #f2f0e9;
 }
 
-.searchTerm{
+.searchTerm {
   height: 8vh;
   width: 20vw;
   min-height: 40px;
@@ -101,7 +103,7 @@ header{
   outline: none;
 }
 
-.searchButton{
+.searchButton {
   background: transparent;
   border: 1px solid;
   border-left: none;
@@ -114,7 +116,7 @@ header{
   cursor: pointer;
 }
 
-.button-header{
+.button-header {
   width: 3vw;
   min-height: 26px;
   display: flex;
@@ -123,140 +125,34 @@ header{
   font-size: max(5vh, 26px);
 }
 
-.button-header a{
+.button-header a {
   width: 100%;
   color: cornsilk;
 }
 
 
-.button-header a:hover{
+.button-header a:hover {
   color: #ffe990;
   transition: 0.2s ease all;
 
 }
 
-/*
-header {
-  position: static;
-  background: #563011;
-  width: 100%;
-  border-bottom: none;
-}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
 
-nav {
-  height: 15vh;
-  min-height: 64px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 24px;
-  margin: 0 auto;
-  width: 100%;
-}
+  .logo img{
+    height: 46px;
+  }
+  .header-left {
+    padding-left: 5px;
+    padding-right: max(5vw, 20px);
+  }
 
-.header-center {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 75vw;
-  max-width: 75vw;
-  flex: 0 0 75%;
-  text-align: left;
-}
+  .searchButton, .searchTerm, .category{
+    height: 40px;
+  }
 
-.logo {
-  width: 30%;
-  display: block;
-  transition: 0.2s linear all;
-  cursor: pointer;
+  .button-header{
+    font-size: 26px;
+  }
 }
-
-.logo img {
-  display: block;
-  height: 10vh;
-  min-height: 45px;
-  width: auto;
-  color: white;
-}
-
-.searchBox {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  width: 60%;
-  margin-left: auto;
-  /*flex: 0 0 65%;* /
-  text-decoration: none;
-  min-height: 50px;
-}
-
-#ricerca {
-  display: flex;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 6vh;
-  min-height: 48px;
-}
-
-.category {
-  width: 20%;
-  height: 6vh;
-  min-height: 48px;
-  border: 1px solid #b27302; /* 3px* /
-  border-radius: 5px 0 0 5px;
-}
-
-.searchTerm {
-  margin: 0;
-  width: 60%;
-  padding: 0;
-  height: 6vh;
-  min-height: 48px;
-  /*padding: 15px 40px 15px 15px;* /
-  font-size: 14px;
-  font-weight: 500;
-  background: transparent;
-  border: 1px solid #b27302; /* 3px* /
-  border-radius: 0 5px 5px 0;
-}
-
-.searchButton {
-  width: 20%;
-  height: 6vh;
-  min-height: 48px;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  padding: 12px;
-  overflow: visible;
-}
-
-.header-right {
-  display: block;
-  width: 25%;
-  flex: 0 0 25%;
-}
-
-.button-user, .button-carrello {
-  display: inline-block;
-  margin-left: 20px;
-  position: relative;
-  width: 26px;
-  height: 26px;
-  transition: 0.2s linear all;
-}
-
-.button-user:hover, .button-carrello:hover {
-  box-shadow: 0 8vh 1vw rgba(0, 0, 0, 0.15) inset;
-}
-
-.button-user a, .button-carrello a {
-  vertical-align: middle;
-  cursor: pointer;
-  padding: 5px;
-  position: relative;
-}
-*/
