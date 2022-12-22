@@ -19,8 +19,8 @@
     color: #fff;
     font-size: 1.6rem;
     text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: max(5vh,10px);
+    margin-top: 20px;
+    margin-bottom: max(2.5vh,10px);
     letter-spacing: 2px
 }
 .footer .footerrow{
@@ -75,7 +75,7 @@
 .copyright-text {
     margin: 0;
     grid-column-start: 1;
-    grid-footerrow: 1;
+    /*grid-footerrow: 1;*/
 }
 
 .social-icons {
@@ -118,7 +118,7 @@
     background-color: #29aafe
 }
 
-.footer .social-icons li a, .fa-brands{
+.fa-brands{
     line-height: 34px;
     height: 34px;
     width: 34px;
