@@ -119,10 +119,11 @@
 }
 
 .fa-brands{
-    line-height: 34px;
+    line-height: 34px !important;
     height: 34px;
     width: 34px;
     font-size: 14px;
+    vertical-align: middle;
 }
 
 .social-icons a.facebook:hover {
