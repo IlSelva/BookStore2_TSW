@@ -6,7 +6,7 @@
     <jsp:param name="pageTitle" value="Home"/>
 </jsp:include>
 <style>
-    <%@include file="/WEB-INF/css/homestyle.css" %>
+    <%@include file="/WEB-INF/css/homeStyle.css" %>
 </style>
 
 <section id="StoreDesc">
@@ -64,7 +64,6 @@
             </section>
         </div>
     </div>
-
     <%@include file="footer.html" %>
 
 
