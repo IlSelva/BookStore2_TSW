@@ -25,6 +25,21 @@
   padding-top: 40px;
 }
 
+.book-main-info a {
+  color: inherit;
+  cursor: pointer;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #563011;
+}
+
+.book-main-info a:hover {
+  text-decoration-color: #ffe990;
+}
+
+.book-form h5 {
+  font-weight: normal;
+}
 /* Small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) {
   .book-main{
