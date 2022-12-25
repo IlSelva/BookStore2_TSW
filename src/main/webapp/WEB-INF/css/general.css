@@ -1,4 +1,11 @@
-.page-content{
-    width: 100%;
-    margin-bottom: 10vh;
+.page-content {
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+select, .button {
+  background: #f2f0e9;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 2px;
 }
