@@ -1,0 +1,37 @@
+
+.book-main{
+  margin-top: max(15vh, 45px);
+}
+.book-cover-container{
+  height: 55vh;
+  min-height: 500px;
+  float:left;
+  margin: auto 10vw auto 15vw;
+}
+
+.book-cover{
+  width: 280px;
+  height: 420px;
+}
+
+.book-main-info{
+  height: 55vh;
+  min-height: 500px;
+  margin: auto 5vw auto auto;
+  align-content: center;
+}
+
+.book-info{
+  padding-top: 40px;
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+  .book-main{
+    margin-left: 20vw;
+  }
+  .book-cover-container {
+    float: none;
+    margin-left: 0;
+  }
+}
