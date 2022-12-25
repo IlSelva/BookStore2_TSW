@@ -103,6 +103,11 @@ header {
   outline: none;
 }
 
+.searchTerm:hover, .searchTerm:hover ~ .searchButton, .searchTerm:focus, .searchTerm:focus ~ .searchButton{
+  background: #ffe990;
+  transition: 0.2s ease all;
+}
+
 .searchButton {
   background: transparent;
   border: 1px solid;
@@ -137,8 +142,8 @@ header {
 
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
 
   .logo img{
     height: 46px;

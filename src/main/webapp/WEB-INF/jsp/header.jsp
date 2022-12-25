@@ -38,7 +38,7 @@
                         <select class="category" name="category">
                             <option value="" label="" selected> generi</option>
                             <c:forEach items="${generi}" var="genere">
-                                <option value="<c:out value="${genere.nome}"/>"><c:out value="${genere.nome}"/>.</option>
+                                <option value="<c:out value="${genere.nome}"/>"><c:out value="${genere.nome}"/></option>
                             </c:forEach>
                         </select>
                         <input class="searchTerm" type="text" name="q" autocomplete="off" list="ricerca-datalist"
