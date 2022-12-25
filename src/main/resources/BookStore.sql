@@ -1,7 +1,7 @@
 DROP Database if exists progettoTSW;
 CREATE DATABASE progettoTSW;
 use progettoTSW;
-    
+
 Create Table Autore(
 	id int(11) not null auto_increment,
     nome varchar(20) not null,
@@ -38,7 +38,7 @@ Create Table Cliente(
 
 Create Table Acquisto(
 	id int not null auto_increment,
-    Libro int(11) not null, 
+    Libro int(11) not null,
     Cliente int(11) not null,
     Dataac date not null,
     prezzocent bigint(20) not null,
@@ -66,26 +66,26 @@ CREATE TABLE login (
   CONSTRAINT FOREIGN KEY (idutente) REFERENCES Cliente(id)
 );
 
-#date "YYYY-MM-DD"
+#date 'YYYY-MM-DD'
 
 LOCK TABLES Autore WRITE;
 insert into Autore(nome,cognome) values
-("George","Orwell"),
-("Dante","Alighieri"),
-("Alessandro","Manzoni");
+('George','Orwell'),
+('Dante','Alighieri'),
+('Alessandro','Manzoni');
 UNLOCK TABLES;
 
 insert into Libro(titolo,Autore,editore,genere,descrizione,ncopiedisp,prezzocent) values
-("1984",1,"Feltrinelli","rom","il Grande Fratello",5,"2000"),
-("La fattoria degli animali",1,"Feltrinelli","rom","socialismo animale",2,"1999"),
-("Divina Commedia",2,"Mondadori","poe","poema allegorico-didascalico",9,"1472"),
-("I promessi sposi",3,"Mondadori","rom","romanzo storico Renzo e lucia",15,"1872"),
-("La vita nuova",2,"Mondadori","rom","prosimetro",10,"1294");
+('1984',1,'Feltrinelli','rom','il Grande Fratello',5,'2000'),
+('La fattoria degli animali',1,'Feltrinelli','rom','socialismo animale',2,'1999'),
+('Divina Commedia',2,'Mondadori','poe','poema allegorico-didascalico',9,'1472'),
+('I promessi sposi',3,'Mondadori','rom','romanzo storico Renzo e lucia',15,'1872'),
+('La vita nuova',2,'Mondadori','rom','prosimetro',10,'1294');
 
 insert into Cliente(nome,email,passwordhash,admin) values
-("Silvio","spastore@email.it",SHA1("Password"),0),
-("Alessandro","scagliozziDOC@Foggia.fg",sha1("foggia"),1),
-("Prova","prova@prova.com",SHA1("Password1"),0);
+('Silvio','spastore@email.it',SHA1('Password'),0),
+('Alessandro','scagliozziDOC@Foggia.fg',sha1('foggia'),1),
+('Prova','prova@prova.com',SHA1('Password1'),0);
 
 create view Generi as
 select distinct(genere)
@@ -95,10 +95,10 @@ create view Editori as
 select distinct(editore)
 from Libro;
 
-select * 
+select *
 from Cliente;
 
-select * 
+select *
 from login;
 
 /*
