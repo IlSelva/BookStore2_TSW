@@ -9,3 +9,10 @@ select, .button {
   border-radius: 5px;
   padding: 2px;
 }
+
+.container-section-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh auto 0 auto;
+}
