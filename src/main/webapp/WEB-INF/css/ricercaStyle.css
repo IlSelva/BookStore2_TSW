@@ -3,11 +3,16 @@
   display: block;
 }
 
+.container-section-title h3{
+height: 40vh;
+}
+
 .container-bookgrid{
   display: flex;
   align-items: center;
   justify-items: center;
 }
+
 .griglia {
   display: flex;
   flex-wrap: wrap;
@@ -51,9 +56,6 @@
   margin: max(1vh, 8px) auto 0 auto;
 }
 
-.page-content{
-  margin-bottom: 0;
-}
 .footpages{
   margin-top: 10vh;
   text-align: center;
