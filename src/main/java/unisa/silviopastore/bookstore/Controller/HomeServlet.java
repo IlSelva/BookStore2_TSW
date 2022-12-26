@@ -33,8 +33,8 @@ public class HomeServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		List<Prodotto> prodotti = serviceProd.doRetrieveAll(0, 6);
-		List<Prodotto> ultimi = serviceProd.doRetrieveLast(0,6);
+		List<Prodotto> prodotti = serviceProd.doRetrieveAll(0, 5);
+		List<Prodotto> ultimi = serviceProd.doRetrieveLast(0,5);
 		request.setAttribute("prodotti", prodotti);
 		request.setAttribute("ultimi",ultimi);
 
