@@ -1,0 +1,78 @@
+
+.author-main {
+  margin-top: max(15vh, 45px);
+}
+
+.author-image-container {
+  height: 55vh;
+  float: left;
+  margin: auto 5vw auto 10vw;
+}
+
+.author-image {
+  width: 200px;
+  height: 300px;
+}
+
+.griglia {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  max-width: 80vw;
+  justify-content: center;
+  gap: max(3vw, 20px);
+}
+
+.book {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+}
+
+.book img {
+  height: 250px;
+  width: 175px;
+}
+
+.book-title, .book-author {
+  margin: max(1vh, 8px) auto max(2vh, 15px) auto;
+}
+
+.titolo, .autore {
+  text-decoration: none;
+  color: inherit;
+}
+
+.titolo:hover, .autore:hover {
+  text-decoration: underline;
+}
+
+.book-price {
+  font-weight: bold;
+  margin: max(1vh, 8px) auto 0 auto;
+}
+
+.page-content{
+  margin-bottom: 0;
+}
+.footpages{
+  margin-top: 10vh;
+  text-align: center;
+}
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+
+  .author-image-container {
+    float: none;
+  }
+
+  .author-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
