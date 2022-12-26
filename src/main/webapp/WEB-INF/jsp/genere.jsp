@@ -6,7 +6,7 @@
     <jsp:param name="pageTitle" value="${genere.nome}"/>
 </jsp:include>
 <style>
-    <%@include file="/WEB-INF/css/genereStyle.css" %>
+    <%@include file="/WEB-INF/css/ricercaStyle.css" %>
 </style>
 
 <div class="page-content">
@@ -35,22 +35,13 @@
                 </c:forEach>
             </section>
         </section>
-
-        <div class="footpages" txt="c" style="background-color:#E8E8E8">
-            <a <c:if test="${pag > 1}">href="?id=${param.id}&pag=${pag - 1}&perpag=${perpag}&ord=${ord}"</c:if>>&larr;</a>
-            &emsp;
-            <c:forEach begin="1" end="${npag}" varStatus="loop">
-                <c:choose>
-                    <c:when test="${loop.index == pag}">
-                        <b>${loop.index}</b>
-                    </c:when>
-                    <c:otherwise>
-                        <a href="?id=${param.id}&pag=${loop.index}&perpag=${perpag}&ord=${ord}">${loop.index}</a>
-                    </c:otherwise>
-                </c:choose>
-            </c:forEach>
-            &emsp;
-            <a <c:if test="${pag < npag}">href="?id=${param.id}&pag=${pag + 1}&perpag=${perpag}&ord=${ord}"</c:if>>&rarr;</a>
-        </div>
     </div>
-    <%@include file="footer.html" %>
+</div>
+<c:choose>
+    <c:when test="${pag > 1}">
+        <%@include file="footer-pages.jsp" %>
+    </c:when>
+    <c:otherwise>
+        <%@include file="footer.html" %>
+    </c:otherwise>
+</c:choose>
