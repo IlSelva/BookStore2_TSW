@@ -64,6 +64,7 @@
             </section>
         </div>
     </div>
-    <%@include file="footer.html" %>
+</div>
+<%@include file="footer.html" %>
 
 
