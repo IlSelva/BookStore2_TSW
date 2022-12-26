@@ -43,7 +43,7 @@
                         </select>
                         <input class="searchTerm" type="text" name="q" autocomplete="off" list="ricerca-datalist"
                                placeholder="Ricerca"
-                               onkeyup="ricerca(this.value)" value="<c:out value="${param.q}" />">
+                               onkeypress="ricerca(this.value)" value="<c:out value="${param.q}" />">
                         <datalist id="ricerca-datalist"></datalist>
                         <button class="searchButton" type="submit">
                             <span class="fa fa-search" aria-hidden="true"></span>
