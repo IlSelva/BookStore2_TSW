@@ -30,7 +30,7 @@
                             <a class="titolo" href="Prodotto?id=<c:out value="${prodotto.id}"/>"> <c:out
                                     value="${prodotto.titolo}"/> </a>
                         </h4>
-                        <h5 class = "book-author">
+                        <h5 class="book-author">
                             <a class="autore" href="Autore?id=<c:out value="${prodotto.autore.id}"/>"> <c:out
                                     value="${prodotto.autore.nome}"/> <c:out value="${prodotto.autore.cognome}"/></a>
                         </h5>
@@ -54,7 +54,7 @@
                             <a class="titolo" href="Prodotto?id=<c:out value="${prodotto.id}"/>"> <c:out
                                     value="${prodotto.titolo}"/> </a>
                         </h4>
-                        <h5 class = "book-author">
+                        <h5 class="book-author">
                             <a class="autore" href="Autore?id=<c:out value="${prodotto.autore.id}"/>"> <c:out
                                     value="${prodotto.autore.nome}"/> <c:out value="${prodotto.autore.cognome}"/></a>
                         </h5>
