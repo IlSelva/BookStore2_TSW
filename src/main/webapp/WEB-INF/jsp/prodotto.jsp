@@ -18,14 +18,14 @@
 
 <div class="page-content">
     <div class="book-main">
-            <div class="book-cover-container">
-                <img class="book-cover" src="img/prodotti/${prodotto.id}.jpg" alt="Libro_${prodotto.id}"/>
-                <br/>
-                <p class="testo">
-                    Editore:
-                    <a href="Editore?id=<c:out value="${prodotto.editore}"/>"> <c:out value="${prodotto.editore}"/> </a>
-                </p>
-            </div>
+        <div class="book-cover-container">
+            <img class="book-cover" src="img/prodotti/${prodotto.id}.jpg" alt="Libro_${prodotto.id}"/>
+            <br/>
+            <p class="testo">
+                Editore:
+                <a href="Editore?id=<c:out value="${prodotto.editore}"/>"> <c:out value="${prodotto.editore}"/> </a>
+            </p>
+        </div>
         <div class="book-main-info">
             <div class="book-info">
                 <h3>${prodotto.titolo}</h3>
@@ -65,4 +65,5 @@
             </div>
         </div>
     </div>
-    <%@include file="footer.html" %>
+</div>
+<%@include file="footer.html" %>
