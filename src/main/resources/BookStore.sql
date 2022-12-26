@@ -124,10 +124,10 @@ insert into libro values
 ('Omaggio alla Catalogna',1,'08386600152','bio','guerra civile spagnola',2,'1938-04-25');
 
 */
-
-insert into Libro(titolo, Autore, editore, genere, descrizione, ncopiedisp, prezzocent)
-values ('1984', 2, 'Feltrinelli', 'rom', 'il Grande Fratello', 5, '2000'),
-       ('La fattoria degli animali', 2, 'Feltrinelli', 'rom', 'socialismo animale', 2, '1999'),
-       ('I promessi sposi', 2, 'Mondadori', 'rom', 'romanzo storico Renzo e lucia', 15, '1872')
-
+#
+# insert into Libro(titolo, Autore, editore, genere, descrizione, ncopiedisp, prezzocent)
+# values ('1984', 2, 'Feltrinelli', 'rom', 'il Grande Fratello', 5, '2000'),
+#        ('La fattoria degli animali', 2, 'Feltrinelli', 'rom', 'socialismo animale', 2, '1999'),
+#        ('I promessi sposi', 2, 'Mondadori', 'rom', 'romanzo storico Renzo e lucia', 15, '1872')
+#
 
