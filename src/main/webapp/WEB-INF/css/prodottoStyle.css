@@ -21,11 +21,11 @@
   align-content: center;
 }
 
-.book-info{
+.book-info {
   padding-top: 40px;
 }
 
-.book-main-info a {
+.page-content a {
   color: inherit;
   cursor: pointer;
   text-underline-position: under;
