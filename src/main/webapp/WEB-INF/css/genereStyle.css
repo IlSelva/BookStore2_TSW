@@ -1,0 +1,70 @@
+.container{
+  width: 100%;
+  display: block;
+}
+
+.container-bookgrid{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.griglia {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  max-width: 80vw;
+  justify-content: left;
+  gap: max(3vw, 20px);
+}
+
+.book {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+}
+
+.book img {
+  height: 250px;
+  width: 175px;
+}
+
+.book-title, .book-author {
+  margin: max(1vh, 8px) auto max(2vh, 15px) auto;
+}
+
+.titolo, .autore {
+  text-decoration: none;
+  color: inherit;
+}
+
+.titolo:hover, .autore:hover {
+  text-decoration: underline;
+}
+
+.book-price {
+  font-weight: bold;
+  margin: max(1vh, 8px) auto 0 auto;
+}
+
+.page-content{
+  margin-bottom: 0;
+}
+.footpages{
+  margin-top: 10vh;
+  text-align: center;
+}
+
+@media (max-width: 475px) {
+
+  .book img{
+    float: left;
+    margin-bottom: 1vh;
+    margin-right: 10px;
+  }
+
+}
