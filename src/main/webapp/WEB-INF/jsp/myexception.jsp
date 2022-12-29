@@ -12,7 +12,7 @@
 </jsp:include>
 
 <div class="page-content">
-    <section class="error-message">
+    <section class="message">
         <h1><%= exception.getMessage() %>
         </h1>
     </section>
