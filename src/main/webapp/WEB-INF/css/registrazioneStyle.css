@@ -1,0 +1,60 @@
+.container {
+  margin-top: 10px;
+  display: flex;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+#left {
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+#right {
+  margin-left: 5%;
+}
+
+.testo {
+  margin-top: 5%;
+}
+
+.linea {
+  border-left: 4px dotted #fcd899;
+  position: center;
+  left: 40%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.page-content {
+  margin-bottom: 0;
+}
+
+form {
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+}
+
+form input {
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 75%;
+  }
+}
