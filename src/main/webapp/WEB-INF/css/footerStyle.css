@@ -4,7 +4,7 @@
     padding: 2vh 5vw 0;
     height: border-box;
     /*font-size:1.5rem;*/
-    line-height: 4.9vh;
+    line-height: 24px;
     color: #737373;
     bottom: 0;
     /*add min for sizes */
@@ -143,9 +143,9 @@
         padding-bottom: 0
     }
 
-    .footer .copyright-text, .footer .social-icons {
-        text-align: center
-    }
+    /*.footer .copyright-text, .footer .social-icons {*/
+    /*    text-align: center*/
+    /*}*/
 
     /* da controllare*/
     .social-icons li.title {
