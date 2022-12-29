@@ -8,17 +8,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/RegistrazioneForm")
-public class RegistrazioneFormServlet extends HttpServlet {
+@WebServlet("/Utente")
+public class UtenteServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		doGet(request,response);
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		if (request.getSession().getAttribute("utente") != null) {
-			throw new MyServletException("Utente loggato.");
-		}
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/jsp/registrazioneForm.jsp");
+		if(request.getSession().getAttribute("utente") == null)
+			throw new MyServletException("Utente non loggato.");
+
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/jsp/profilo.jsp");
 		requestDispatcher.forward(request, response);
 	}
 }

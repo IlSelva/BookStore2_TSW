@@ -1,0 +1,32 @@
+
+.page-content{
+  height: 70vh;
+}
+
+.user-window {
+  display: flex;
+  justify-content: center;
+  padding-top: max(20vh, 40px);
+}
+
+.content{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px 10px;
+  margin:auto;
+}
+
+.notifica{
+
+}
+
+.button{
+  text-decoration: none;
+  color: inherit;
+  padding: 2px 5px;
+}
+
+.user-button, .admin-buttons{
+  display: flex;
+  gap: 10px;
+}
