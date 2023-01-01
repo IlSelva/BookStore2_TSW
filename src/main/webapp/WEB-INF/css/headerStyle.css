@@ -57,7 +57,7 @@ header {
 
 .logo img {
   display: block;
-  height: 9vh;
+  max-height: 60px;
   min-height: 46px;
   margin-top: max(6px, 1vh);
   margin-bottom: max(6px, 1vh);
@@ -78,16 +78,16 @@ header {
   border: 1px solid;
   border-left: none;
   border-radius: 5px 0 0 5px;
-  height: 8vh;
+  max-height: 52px;
   min-height: 40px;
-  padding: 0 5px 0 5px;
+  padding: 10px 5px;
   margin: 0;
   display: block;
   background: #f2f0e9;
 }
 
 .searchTerm {
-  height: 8vh;
+  max-height: 52px;
   width: 20vw;
   min-height: 40px;
   border: 1px solid;
@@ -109,7 +109,7 @@ header {
   border: 1px solid;
   border-left: none;
   border-radius: 0 5px 5px 0;
-  height: 8vh;
+  max-height: 52px;
   min-height: 40px;
   padding: 0 5px 0 0;
   margin: 0;
@@ -119,6 +119,8 @@ header {
 
 .button-header {
   width: 3vw;
+  max-width: 40px;
+  min-width: 26px;
   min-height: 26px;
   display: flex;
   transition: 0.2s linear all;
