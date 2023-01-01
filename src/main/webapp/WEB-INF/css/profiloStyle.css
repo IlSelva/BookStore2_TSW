@@ -26,6 +26,10 @@
   padding: 2px 5px;
 }
 
+.button:hover{
+  background-color: #ffe990;
+}
+
 .user-button, .admin-buttons{
   display: flex;
   gap: 10px;
