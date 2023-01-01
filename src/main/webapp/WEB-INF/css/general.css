@@ -10,6 +10,7 @@ body {
 
 .page-content {
   width: 100%;
+  min-height: 95vh;
   margin-bottom: 10vh;
 }
 
@@ -28,7 +29,23 @@ select, .button {
 }
 
 .message{
-  min-height: 50%;
+  display: flex;
   justify-content: center;
   align-content: center;
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+}
+
+@media (min-width: 577px) and (max-width: 1280px){
+  .page-content {
+    min-height: 50vh;
+  }
+}
+/* Extra large screens, TV */
+@media (min-width: 1281px) and (max-width: 1920px) {
+  .page-content {
+    min-height: 65vh;
+  }
 }
