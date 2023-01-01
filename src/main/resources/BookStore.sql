@@ -91,7 +91,7 @@ values ('1984', 1, 'Feltrinelli', 'rom', 'il Grande Fratello', 5, '2000'),
 
 insert into Cliente(nome, email, passwordhash, admin)
 values ('Silvio', 'spastore@email.it', SHA1('Password'), 0),
-       ('Alessandro', 'scagliozziDOC@Foggia.fg', sha1('foggia'), 1),
+       ('Niccolo', 'nic@email.com', SHA1('Password'), 1),
        ('Prova', 'prova@prova.com', SHA1('Password1'), 0);
 
 create view Generi as
