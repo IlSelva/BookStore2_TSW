@@ -39,9 +39,9 @@ public class ModificaUtenteServlet extends HttpServlet {
         u.setEmail(email);
         utenteDAO.doUpdate(u);
         request.getSession().setAttribute("utente", u);
-        request.setAttribute("notifica", "Informazioni modificate con successo");
+        request.setAttribute("notifica", "<span style=\"color:green\"> Informazioni modificate con successo </span>");
       } else {
-        request.setAttribute("notifica", "informazioni insufficienti"); //errore
+        request.setAttribute("notifica", "<span style=\"color:red\">informazioni insufficienti </span>"); //errore
       }
     }
     RequestDispatcher requestDispatcher = request.getRequestDispatcher(Address);

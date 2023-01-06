@@ -25,7 +25,7 @@ public class ModificaPasswordServlet extends HttpServlet {
     String idstr = request.getParameter("id");
     String notifica = null;
     if (idstr != null) {
-      Address = "WEB-INF/jsp/Profilo.jsp";
+      Address = "WEB-INF/jsp/profilo.jsp";
       Utente u = (Utente) request.getSession().getAttribute("utente");
       int id = Integer.parseInt(idstr);
       if ((u == null) || (u.getId() != id)) {
@@ -36,10 +36,10 @@ public class ModificaPasswordServlet extends HttpServlet {
       if ((password != null) && (newpassword != null) && (u.checkPassword(password))) { //modifica password
         u.setPassword(newpassword);
         utenteDAO.doUpdate(u);
-        request.setAttribute("notifica", " password modificata con successo");
+        request.setAttribute("notifica", "<span style=\"color:green\"> password modificata con successo </span>");
         request.getSession().setAttribute("utente", u);
       } else {
-        request.setAttribute("notifica", "Errore, password incorretta");
+        request.setAttribute("notifica", "<span style=\"color:red\"> Errore, password incorretta </span>");
       }
     }
     RequestDispatcher requestDispatcher = request.getRequestDispatcher(Address);
