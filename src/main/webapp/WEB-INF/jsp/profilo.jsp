@@ -17,7 +17,9 @@
 </style>
 
 <div class="page-content">
-    <h5 id="notifica">${notifica}</h5>
+    <div class="container-flex">
+        <h5 id="notifica">${notifica}</h5>
+    </div>
     <section class="user-window">
         <div class="content">
             <h4> Nome: <c:out value="${utente.nome}"/></h4>
