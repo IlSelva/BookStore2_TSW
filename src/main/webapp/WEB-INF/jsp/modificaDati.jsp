@@ -21,6 +21,7 @@
                 <input type="text" name="nome" value="${utente.nome}" required>
                 <label>e-mail</label>
                 <input type="text" name="email" value="${utente.email}" required>
+
                 <c:if test="${utente != null}">
                     <input class="button" type="submit" name="modifica" value="Modifica">
                 </c:if>
