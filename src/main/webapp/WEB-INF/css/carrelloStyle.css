@@ -1,0 +1,26 @@
+
+.griglia{
+    display: block;
+}
+
+.book{
+    display: flex;
+    min-height: 250px;
+    margin-bottom: 20px;
+}
+
+.pic {
+    margin-right: 10px;
+    margin-left: 5vw;
+}
+
+.book-info{
+    display: block;
+}
+.carrello-end-section{
+    display: flex;
+    justify-content: center;
+}
+.container-end-section{
+    display: block;
+}

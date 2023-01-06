@@ -50,7 +50,7 @@
     width: 175px;
 }
 
-.book-title, .book-author{
+.book-title, .book-author, .book-quantity-price{
     margin: max(1vh,8px) auto max(2vh,15px) auto;
 }
 
