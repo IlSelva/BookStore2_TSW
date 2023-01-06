@@ -1,36 +1,62 @@
-
-.page-content{
+.page-content {
   height: 70vh;
 }
 
 .user-window {
   display: flex;
   justify-content: center;
-  padding-top: max(20vh, 40px);
+  padding-top: 40px;
 }
 
-.content{
+.content {
   border: 1px solid black;
   border-radius: 5px;
   padding: 0 10px 10px;
   margin:auto;
 }
 
-.notifica{
+.notifica {
 
 }
 
-.button{
+.button {
   text-decoration: none;
   color: inherit;
   padding: 2px 5px;
 }
 
-.button:hover{
+.button:hover {
   background-color: #ffe990;
 }
 
-.user-button, .admin-buttons{
+.user-button, .admin-buttons {
   display: flex;
   gap: 10px;
+}
+
+/* modifica utente */
+.container-flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.section-title{
+  margin: 10px;
+}
+form {
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+}
+
+form input {
+  margin-bottom: 10px;
 }
