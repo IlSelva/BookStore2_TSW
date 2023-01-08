@@ -61,11 +61,11 @@ public class Prodotto {
 		this.descrizione = descrizione;
 	}
 
-	public int getcopie(){
+	public int getCopie(){
 		return this.copie;
 	}
 
-	public void setcopie(int copie){
+	public void setCopie(int copie){
 		this.copie = copie;
 	}
 

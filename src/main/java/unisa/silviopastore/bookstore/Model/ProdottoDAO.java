@@ -28,7 +28,7 @@ public class ProdottoDAO {
 				p.setEditore(rs.getString(4));
 				p.setGenere(rs.getString(5));
 				p.setDescrizione(rs.getString(6));
-				p.setcopie(rs.getInt(7));
+				p.setCopie(rs.getInt(7));
 				p.setPrezzoCent(rs.getLong(8));
 				prodotti.add(p);
 			}
@@ -54,7 +54,7 @@ public class ProdottoDAO {
 				p.setEditore(rs.getString(4));
 				p.setGenere(rs.getString(5));
 				p.setDescrizione(rs.getString(6));
-				p.setcopie(rs.getInt(7));
+				p.setCopie(rs.getInt(7));
 				p.setPrezzoCent(rs.getLong(8));
 				prodotti.add(p);
 			}
@@ -78,7 +78,7 @@ public class ProdottoDAO {
 				p.setEditore(rs.getString(4));
 				p.setGenere(rs.getString(5));
 				p.setDescrizione(rs.getString(6));
-				p.setcopie(rs.getInt(7));
+				p.setCopie(rs.getInt(7));
 				p.setPrezzoCent(rs.getLong(8));
 				return p;
 			}
@@ -158,7 +158,7 @@ public class ProdottoDAO {
 				p.setEditore(rs.getString(4));
 				p.setGenere(rs.getString(5));
 				p.setDescrizione(rs.getString(6));
-				p.setcopie(rs.getInt(7));
+				p.setCopie(rs.getInt(7));
 				p.setPrezzoCent(rs.getLong(8));
 				prodotti.add(p);
 			}
@@ -185,7 +185,7 @@ public class ProdottoDAO {
 				p.setEditore(rs.getString(3));
 				p.setGenere(rs.getString(4));
 				p.setDescrizione(rs.getString(5));
-				p.setcopie(rs.getInt(6));
+				p.setCopie(rs.getInt(6));
 				p.setPrezzoCent(rs.getLong(7));
 				prodotti.add(p);
 			}
@@ -212,7 +212,7 @@ public class ProdottoDAO {
 				p.setEditore(rs.getString(4));
 				p.setGenere(rs.getString(5));
 				p.setDescrizione(rs.getString(6));
-				p.setcopie(rs.getInt(7));
+				p.setCopie(rs.getInt(7));
 				p.setPrezzoCent(rs.getLong(8));
 				prodotti.add(p);
 			}
@@ -266,7 +266,7 @@ public class ProdottoDAO {
 				p.setEditore(rs.getString(4));
 				p.setGenere(rs.getString(5));
 				p.setDescrizione(rs.getString(6));
-				p.setcopie(rs.getInt(7));
+				p.setCopie(rs.getInt(7));
 				p.setPrezzoCent(rs.getLong(8));
 				prodotti.add(p);
 			}
@@ -294,7 +294,7 @@ public class ProdottoDAO {
 				p.setEditore(rs.getString(4));
 				p.setGenere(rs.getString(5));
 				p.setDescrizione(rs.getString(6));
-				p.setcopie(rs.getInt(7));
+				p.setCopie(rs.getInt(7));
 				p.setPrezzoCent(rs.getLong(8));
 				prodotti.add(p);
 			}
@@ -314,7 +314,7 @@ public class ProdottoDAO {
 			ps.setString(3, prodotto.getEditore());
 			ps.setString(4,prodotto.getGenere());
 			ps.setString(5,prodotto.getDescrizione());
-			ps.setInt(6,prodotto.getcopie());
+			ps.setInt(6,prodotto.getCopie());
 			ps.setLong(7,prodotto.getPrezzoCent());
 			if (ps.executeUpdate() != 1) {
 				throw new RuntimeException("INSERT error.");
@@ -338,7 +338,7 @@ public class ProdottoDAO {
 			ps.setString(3, prodotto.getEditore());
 			ps.setString(4, prodotto.getGenere());
 			ps.setString(5, prodotto.getDescrizione());
-			ps.setInt(6, prodotto.getcopie());
+			ps.setInt(6, prodotto.getCopie());
 			ps.setLong(7, prodotto.getPrezzoCent());
 			ps.setInt(8, prodotto.getId());
 			if (ps.executeUpdate() != 1) {
