@@ -45,23 +45,30 @@
                 <c:if test="${utente.admin}">
                     <form action="AdminProdotto" method="post">
                         <input type="hidden" name="id" value="${prodotto.id}">
-                        <input type="submit" value="Modifica">
-                        <input type="submit" name="rimuovi" value="Rimuovi">
+                        <input class="button" type="submit" value="Modifica">
+                        <input class="button" type="submit" name="rimuovi" value="Rimuovi">
                     </form>
                 </c:if>
 
                 <h4>Prezzo: ${prodotto.prezzoEuro} &euro;</h4>
-                <h5>Disponibili: ${prodotto.copie} </h5>
-                <form action="Carrello" method="post">
-                    <label>Quantità:</label>
-                    <select name="addNum">
-                        <c:forEach begin="1" end="${prodotto.copie}" varStatus="loop">
-                            <option value="${loop.index}">${loop.index}</option>
-                        </c:forEach>
-                    </select>
-                    <input type="hidden" name="prodId" value="${prodotto.id}">
-                    <input class="button" type="submit" value="Aggiungi al carrello">
-                </form>
+                <c:choose>
+                    <c:when test="${prodotto.copie > 0}">
+                        <h5>Disponibili: ${prodotto.copie} </h5>
+                        <form action="Carrello" method="post">
+                            <label>Quantità:</label>
+                            <select name="addNum">
+                                <c:forEach begin="1" end="${prodotto.copie}" varStatus="loop">
+                                    <option value="${loop.index}">${loop.index}</option>
+                                </c:forEach>
+                            </select>
+                            <input type="hidden" name="prodId" value="${prodotto.id}">
+                            <input class="button" type="submit" value="Aggiungi al carrello">
+                        </form>
+                    </c:when>
+                    <c:otherwise>
+                        <h5 style="color: red"> PRODOTTO NON DISPONIBILE </h5>
+                    </c:otherwise>
+                </c:choose>
             </div>
         </div>
     </div>
