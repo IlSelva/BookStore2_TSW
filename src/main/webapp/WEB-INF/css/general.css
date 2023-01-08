@@ -16,9 +16,9 @@ body {
 
 select, .button {
   background: #f2f0e9;
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 2px;
+  border: 1px solid #a5a5b1;
+  border-radius: 4px;
+  padding: 2px 4px;
 }
 
 .container-section-title{
