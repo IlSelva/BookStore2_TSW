@@ -13,8 +13,10 @@
 
 <div class="page-content">
     <section class="message">
-        <h1>Errore ${requestScope['javax.servlet.error.status_code']}</h1>
-        <pre>${requestScope['javax.servlet.error.exception']}</pre>
+        <div class="content">
+            <h1>Errore ${requestScope['javax.servlet.error.status_code']}</h1>
+            <pre>${requestScope['javax.servlet.error.exception']}</pre>
+        </div>
     </section>
 </div>
 

@@ -13,8 +13,10 @@
 
 <div class="page-content">
     <section class="message">
-        <h1><%= exception.getMessage() %>
-        </h1>
+        <div class="content">
+            <h1><%= exception.getMessage() %>
+            </h1>
+        </div>
     </section>
 </div>
 <%@include file="footer.html" %>
