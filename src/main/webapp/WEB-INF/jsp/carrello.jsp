@@ -34,7 +34,7 @@
                         </h5>
                         <div class="book-quantity-price">
                             <h5>Quantità: <c:out value="${pq.quantita}"/>,</h5>
-                            <h5>Prezzo unit.: <c:out value="${pq.prodotto.prezzoEuro}"/> &euro;,F</h5>
+                            <h5>Prezzo unit.: <c:out value="${pq.prodotto.prezzoEuro}"/> &euro;</h5>
                             <h5>Prezzo tot.: <c:out value="${pq.prezzoTotEuro}"/> &euro;</h5>
                         </div>
                         <form action="Carrello" method="post">
