@@ -19,7 +19,7 @@
 <div class="page-content">
     <div class="book-main">
         <div class="book-cover-container">
-            <img class="book-cover" src="img/prodotti/${prodotto.id}.jpg" alt="Libro_${prodotto.id}"/>
+            <img class="book-cover" src="${initParam['upload.location']}/prodotti/${prodotto.id}.jpg" alt="Libro_${prodotto.id}"/>
             <br/>
             <p class="testo">
                 Editore:

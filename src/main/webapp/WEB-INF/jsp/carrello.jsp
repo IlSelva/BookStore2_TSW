@@ -20,7 +20,7 @@
                 <div class="book">
                     <a class="pic" href="Prodotto?id=<c:out value="${pq.prodotto.id}"/>">
                         <img class="pic"
-                             src="img/prodotti/<c:out value="${pq.prodotto.id}"/>.jpg"
+                             src="${initParam['upload.location']}/prodotti/<c:out value="${pq.prodotto.id}"/>.jpg"
                              alt="Libro_<c:out value="${pq.prodotto.id}"/>">
                     </a>
                     <div class="book-info">

@@ -23,7 +23,7 @@
                 <c:forEach items="${ultimi}" var="prodotto">
                     <article class="book">
                         <a class="pic" href="Prodotto?id=<c:out value="${prodotto.id}"/>"> <img class="pic"
-                                                                                                src="img/prodotti/<c:out value="${prodotto.id}"/>.jpg"
+                                                                                                src="<c:out value="${initParam['upload.location']}/prodotti/${prodotto.id}"/>.jpg"
                                                                                                 alt="Libro_<c:out value="${prodotto.id}"/>">
                         </a>
                         <h4 class="book-title">
@@ -47,7 +47,7 @@
                 <c:forEach items="${prodotti}" var="prodotto">
                     <article class="book">
                         <a class="pic" href="Prodotto?id=<c:out value="${prodotto.id}"/>"> <img class="pic"
-                                                                                                src="img/prodotti/<c:out value="${prodotto.id}"/>.jpg"
+                                                                                                src="<c:out value="${initParam['upload.location']}/prodotti/${prodotto.id}"/>.jpg"
                                                                                                 alt="Libro_<c:out value="${prodotto.id}"/>">
                         </a>
                         <h4 class="book-title">

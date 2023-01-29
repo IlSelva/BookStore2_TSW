@@ -19,7 +19,7 @@
                 <c:forEach items="${prodotti}" var="prodotto">
                     <article class="book">
                         <a class="pic" href="Prodotto?id=<c:out value="${prodotto.id}"/>"> <img class="pic"
-                                                                                                src="img/prodotti/<c:out value="${prodotto.id}"/>.jpg"
+                                                                                                src="${initParam['upload.location']}/prodotti/<c:out value="${prodotto.id}"/>.jpg"
                                                                                                 alt="Libro_<c:out value="${prodotto.id}"/>">
                         </a>
                         <h4 class="book-title">
@@ -38,7 +38,7 @@
     </div>
 </div>
 <c:choose>
-    <c:when test="${pag > 1}">
+    <c:when test="${npag > 1}">
         <%@include file="footer-pages.jsp" %>
     </c:when>
     <c:otherwise>

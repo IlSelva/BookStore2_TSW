@@ -22,4 +22,8 @@
     <exception-type>unisa.silviopastore.bookstore.Controller.MyServletException</exception-type>
     <location>/WEB-INF/jsp/myexception.jsp</location>
   </error-page>
+  <context-param>
+    <param-name>upload.location</param-name>
+    <param-value>/BookStore/immagini</param-value>
+  </context-param>
 </web-app>
