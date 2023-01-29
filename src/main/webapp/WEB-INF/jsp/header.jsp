@@ -12,7 +12,7 @@
     <title>Bookshop Store - ${param.pageTitle}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/x-icon" href="/img/logo/svg/bookstore-website-favicon-black.svg">
+    <link rel="icon" type="image/x-icon" href="/img/logo/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/WEB-INF/css/general.css">
     <script src="ricerca.js"></script>
     <script src="https://kit.fontawesome.com/4367acb6a6.js" crossorigin="anonymous"></script>
