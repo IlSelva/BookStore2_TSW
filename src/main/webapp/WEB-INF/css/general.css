@@ -14,11 +14,15 @@ body {
   margin-bottom: 10vh;
 }
 
-select, .button {
+select, .button, input::file-selector-button {
   background: #f2f0e9;
   border: 1px solid #a5a5b1;
   border-radius: 4px;
   padding: 2px 4px;
+}
+
+.button:hover, input::file-selector-button:hover {
+  background-color: #ffe990;
 }
 
 .container-section-title{
