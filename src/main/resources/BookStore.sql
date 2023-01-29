@@ -1,4 +1,3 @@
-
 DROP Database if exists progettoTSW;
 CREATE DATABASE progettoTSW;
 use progettoTSW;
@@ -90,7 +89,7 @@ values ('1984', 1, 'Feltrinelli', 'rom', 'il Grande Fratello', 5, '2000'),
        ('La vita nuova', 2, 'Mondadori', 'rom', 'prosimetro', 10, '1294');
 
 insert into Cliente(nome, email, passwordhash, admin)
-values ('Silvio', 'spastore@email.it', SHA1('Password'), 0),
+values ('Silvio', 'spastore@email.it', SHA1('Password'), 1),
        ('Niccolo', 'nic@email.com', SHA1('Password'), 1),
        ('Prova', 'prova@prova.com', SHA1('Password1'), 0);
 
