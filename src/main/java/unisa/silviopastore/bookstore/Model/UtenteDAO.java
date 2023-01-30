@@ -120,12 +120,13 @@ public class UtenteDAO {
 	public void doUpdate(Utente utente) {
 		try (Connection con = ConPool.getConnection()) {
 			PreparedStatement ps = con
-					.prepareStatement("UPDATE Cliente SET nome=?, id=?, email=?, passwordhash=? WHERE id=?");
+					.prepareStatement("UPDATE Cliente SET nome=?, id=?, email=?, passwordhash=?, admin=? WHERE id=?");
 			ps.setString(1, utente.getNome());
 			ps.setInt(2, utente.getId());
 			ps.setString(3, utente.getEmail());
 			ps.setString(4, utente.getPasswordhash());
-			ps.setInt(5, utente.getId());
+			ps.setBoolean(5, utente.isAdmin());
+			ps.setInt(6, utente.getId());
 			if (ps.executeUpdate() != 1) {
 				throw new RuntimeException("UPDATE error.");
 			}
