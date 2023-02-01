@@ -36,6 +36,7 @@ select, .button, input::file-selector-button {
   display: flex;
   justify-content: center;
   align-content: center;
+  overflow-wrap: break-word;
 }
 
 /* Small devices (landscape phones, 576px and down) */
