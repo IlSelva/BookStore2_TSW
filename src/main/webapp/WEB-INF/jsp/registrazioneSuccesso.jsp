@@ -6,7 +6,7 @@
 
 <div class="page-content">
     <section class="message">
-        <div class="container">
+        <div class="content">
             <h2>Registrazione avvenuta con successo.</h2>
             <br>
             <h3>Puoi navigare il sito utilizzando il menu in alto.</h3>
