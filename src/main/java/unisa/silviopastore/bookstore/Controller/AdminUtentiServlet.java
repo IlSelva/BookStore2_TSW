@@ -22,10 +22,10 @@ public class AdminUtentiServlet extends HttpServlet {
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     Utente utente = (Utente) request.getSession().getAttribute("utente"); // prendo l'utente dalla sessione
-      if (utente == null || !utente.isAdmin()) //controllo che l'utente sia amministratore
-      {
-          throw new MyServletException();
-      }
+    if (utente == null || !utente.isAdmin()) //controllo che l'utente sia amministratore
+    {
+      throw new MyServletException();
+    }
 
     String address = "WEB-INF/jsp/adminUtenti.jsp";
     String idstr = request.getParameter("id");
@@ -49,14 +49,14 @@ public class AdminUtentiServlet extends HttpServlet {
           Utente u = utenteDAO.doRetrieveById(id);
           u.setNome(nome);
           u.setEmail(email);
-            if ((password != null) || (password.compareTo("") != 0)) {
-                u.setPassword(password);
-            }
-            if (admin != null) {
-                u.setAdmin(true);
-            } else {
-                u.setAdmin(false);
-            }
+          if ((password != null) || (password.compareTo("") != 0)) {
+            u.setPassword(password);
+          }
+          if (admin != null) {
+            u.setAdmin(true);
+          } else {
+            u.setAdmin(false);
+          }
           utenteDAO.doUpdate(u);
           request.setAttribute("notifica", "Utente Modificato con successo");
           List<Utente> utenti = utenteDAO.doRetrieveAll(0, 10); // carico tutti gli utenti dal DB e li mando alla jsp
