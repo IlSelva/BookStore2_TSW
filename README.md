@@ -1,4 +1,4 @@
-# BookStor
+# BookStore
 Project for TSW exam - University of Salerno - with professors Costagliola and De Rosa, remake of old Project BookStore_TSW
 
 How to deploy:
