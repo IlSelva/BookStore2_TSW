@@ -1,5 +1,5 @@
-# BookStore2_TSW
-Project for TSW exam, remake of old Project BookStore_TSW
+# BookStor
+Project for TSW exam - University of Salerno - with professors Costagliola and De Rosa, remake of old Project BookStore_TSW
 
 How to deploy:
 the folders for images configured in web.xml (for frontend) and in the upload servlet (for backend) should be changed as needed,
