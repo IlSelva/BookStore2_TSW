@@ -1,8 +1,7 @@
 # BookStore
 Project for TSW exam - University of Salerno - with professors Costagliola and De Rosa, remake of old Project BookStore_TSW
 
-How to deploy:
-
+## How to deploy:
 in class ConPool change database settings (url, user, password ,...)
 the folders for images configured in web.xml (for frontend) and in the upload servlet (for backend) should be changed as needed,
 It also must be included the path in the conf/server.xml of tomcat:
